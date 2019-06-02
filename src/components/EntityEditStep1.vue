@@ -1,10 +1,9 @@
 <template><div></div></template>
 
 <script>
-    import Entity from "@/components/Entity";
+    // import Entity from "@/components/Entity";
 
-    const $parent = Entity;
-    // let parentParentWrapper = mount(Entity);
+    // const $parent = Entity;
 
 
     export default {
@@ -26,11 +25,12 @@
             console.log('Route ID: ' + this.$route.params.id + '| Step1');
             // eslint-disable-next-line
             console.info('Child mounted');
+
             this.$parent.inp1 = this.inp1;
         },
-        mocks: {
-            $parent
-        }
+        // mocks: {
+        //     $parent
+        // }
     }
 </script>
 

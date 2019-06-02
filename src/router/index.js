@@ -20,8 +20,15 @@ const router = new VueRouter({
 
             children: [
                 {
-                    path: 'step1',
+                    path: 'step',
                     component: EntityEditStep1,
+                    children: [
+                        {
+                            path: '1',
+                            component: EntityEditStep1,
+                        }
+
+                    ]
                 },
                 {
                     path: 'step2',
